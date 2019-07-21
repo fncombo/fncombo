@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>fncombo</title>
+    <meta name="description" content="Hello. I am a developer and a designer. Here you can find some of the projects I've worked on.">
+    <meta name="og:description" content="Hello. I am a developer and a designer. Here you can find some of the projects I've worked on.">
+    <meta name="twitter:description" content="Hello. I am a developer and a designer. Here you can find some of the projects I've worked on.">
+    <style>
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: #fff;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.75;
+    overflow-x: hidden;
+}
+
+hr {
+    margin: 2rem 0;
+    border: none;
+    border-top: 1px solid hsl(0, 0%, 90%);
+}
+
+.fnheader {
+    background: rgba(255, 255, 255, 0.9);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    margin-bottom: 2rem;
+}
+
+@supports (backdrop-filter: blur(20px)) {
+    .fnheader {
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(20px) saturate(200%);
+    }
+}
+
+.fnheader:before {
+    background: linear-gradient(to right, rgb(130, 180, 50), rgb(80, 160, 240));
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+}
+
+.fnheader h1 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000;
+    font-family: inherit;
+}
+
+.fnheader h1 a {
+    margin-left: 0.25rem;
+    background: linear-gradient(to right, rgb(130, 180, 50), rgb(80, 160, 240));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+.fnheader h1 a:after {
+    content: '';
+    background: linear-gradient(to right, rgb(130, 180, 50), rgb(80, 160, 240));
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    right: -1px;
+    height: 2px;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.fnheader h1 a:hover {
+    text-decoration: underline;
+}
+
+.fnheader h1 a:hover:after {
+    opacity: 1;
+}
+
+a {
+    color: #000;
+    border-bottom: 1px dashed #000;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px solid #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+h1 {
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+h2 {
+    margin: 0 0 0.5rem 1rem;
+    font-size: 1.25rem;
+}
+
+h2 a {
+    border: none;
+    color: #82b432;
+    font-weight: 600;
+    background: linear-gradient(to right, rgb(130, 180, 50), rgb(80, 160, 240));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+h2 a:hover {
+    border: none;
+}
+
+h2 a:after {
+    content: '';
+    background: linear-gradient(to right, rgb(130, 180, 50), rgb(80, 160, 240));
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -2px;
+    right: -2px;
+    height: 2px;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+}
+
+h2 a:hover:after {
+    opacity: 1;
+}
+
+p {
+    margin: 0 2rem 0.5rem;
+    padding: 0;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 0 auto 2rem;
+    padding: 0 1rem;
+}
+
+.build {
+    margin-left: 1rem;
+    color: hsl(0, 0%, 50%);
+}
+
+.build:before {
+    content: '{{';
+    margin-right: 0.3rem;
+    opacity: 0.5;
+}
+
+.build:after {
+    content: '}}';
+    margin-left: 0.3rem;
+    opacity: 0.5;
+}
+
+.build a {
+    color: hsl(0, 0%, 50%);
+    border-bottom: 1px dashed hsl(0, 0%, 50%);
+}
+
+.build a:hover {
+    border-bottom: 1px solid hsl(0, 0%, 50%);;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 2rem 0;
+    padding: 0;
+}
+    </style>
+</head>
+
+<body>
+    <div class="fnheader">
+        <h1>fncombo</h1>
+    </div>
+    <div class="content">
+
+        <h2><a href="https://tea.fncombo.me">Tea Shelf</a></h2>
+        <p class="build">built.with = <a href="https://reactjs.org" target="_blank">React</a>;</p>
+        <p>A colourful card gallery of owned teas and tisanes with <a href="https://en.wikipedia.org/wiki/Approximate_string_matching" target="_blank">fuzzy searching</a> and configurable brewing timers. Can work as an offline web app.</p>
+
+        <hr>
+
+        <h2><a href="https://anime.fncombo.me">Anime List</a></h2>
+        <p class="build">built.with = <a href="https://reactjs.org" target="_blank">React</a> &amp;&amp; <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>;</p>
+        <p>Custom data table and gallery which can be searched, filtered, and sorted by multiple columns simultaneously. Uses a <a href="https://nodejs.org" target="_blank">Node.js</a> backend to periodically update data, with additional data powered by <a href="http://jikan.moe" target="_blank">Jikan API</a>.</p>
+
+        <hr>
+
+        <h2><a href="https://breakout3d.fncombo.me">Breakout 3D</a></h2>
+        <p class="build">built.with = <a href="https://threejs.org" target="_blank">Three.js</a>;</p>
+        <p>A three-level breakout game running in the browser using <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API" target="_blank">WebGL</a>. Built from the ground up using basic models and textures. Complete with points, lives, power-ups, and flavour text. Full source code available on <a href="https://github.com/fncombo/breakout-3d" target="_blank">GitHub</a>.</p>
+
+        <hr>
+
+        <h2><a href="https://fireflies.fncombo.me">Firefly Haven</a></h2>
+        <p class="build">built.with = <a href="https://threejs.org" target="_blank">Three.js</a>;</p>
+        <p>Simple serene 3D scene with randomly generated terrain and particle effects. Fireflies around the tree move individually using the <a href="https://en.wikipedia.org/wiki/L%C3%A9vy_flight" target="_blank">L&eacute;vy flight</a> algorithm. Background stars twinkle and rotate to mimic a night sky.</p>
+
+        <hr>
+
+        <ul class="links">
+            <li><a href="https://github.com/fncombo" target="_blank">GitHub</a></li>
+            <li><a href="https://fncombo.deviantart.com/" target="_blank">DeviantArt</a></li>
+            <li><a href="mailto:fncombo@gmail.com">fncombo@gmail.com</a></li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
