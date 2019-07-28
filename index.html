@@ -178,13 +178,13 @@ p {
 
 .build:before {
     content: '{{';
-    margin-right: 0.3rem;
+    margin-right: 0.5rem;
     opacity: 0.5;
 }
 
 .build:after {
     content: '}}';
-    margin-left: 0.3rem;
+    margin-left: 0.5rem;
     opacity: 0.5;
 }
 
@@ -195,6 +195,22 @@ p {
 
 .build a:hover {
     border-bottom: 1px solid hsl(0, 0%, 50%);;
+}
+
+.source {
+    margin-left: 1rem;
+}
+
+.source:before {
+    content: '[';
+    margin-right: 0.5rem;
+    opacity: 0.5;
+}
+
+.source:after {
+    content: ']';
+    margin-left: 0.5rem;
+    opacity: 0.5;
 }
 
 .links {
@@ -214,25 +230,37 @@ p {
     <div class="content">
 
         <h2><a href="https://tea.fncombo.me">Tea Shelf</a></h2>
-        <p class="build">built.with = <a href="https://reactjs.org" target="_blank">React</a>;</p>
+        <p class="build">
+            built.with = <a href="https://reactjs.org" target="_blank">React</a>;
+            <span class="source"><a href="https://github.com/fncombo/fntea" target="_blank">source code</a></span>;
+        </p>
         <p>A colourful card gallery of owned teas and tisanes with <a href="https://en.wikipedia.org/wiki/Approximate_string_matching" target="_blank">fuzzy searching</a> and configurable brewing timers. Can work as an offline web app.</p>
 
         <hr>
 
         <h2><a href="https://anime.fncombo.me">Anime List</a></h2>
-        <p class="build">built.with = <a href="https://reactjs.org" target="_blank">React</a> &amp;&amp; <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>;</p>
-        <p>Custom data table and gallery which can be searched, filtered, and sorted by multiple columns simultaneously. Uses a <a href="https://nodejs.org" target="_blank">Node.js</a> backend to periodically update data, with additional data powered by <a href="http://jikan.moe" target="_blank">Jikan API</a>.</p>
+        <p class="build">
+            built.with = <a href="https://reactjs.org" target="_blank">React</a> &amp;&amp; <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>;
+            <span class="source"><a href="https://github.com/fncombo/fnanime" target="_blank">source code</a></span>;
+        </p>
+        <p>Custom data table and gallery which can be searched, filtered, and sorted by multiple columns simultaneously. Additional data powered by <a href="http://jikan.moe" target="_blank">Jikan API</a>.</p>
 
         <hr>
 
         <h2><a href="https://breakout3d.fncombo.me">Breakout 3D</a></h2>
-        <p class="build">built.with = <a href="https://threejs.org" target="_blank">Three.js</a>;</p>
-        <p>A three-level breakout game running in the browser using <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API" target="_blank">WebGL</a>. Built from the ground up using basic models and textures. Complete with points, lives, power-ups, and flavour text. Full source code available on <a href="https://github.com/fncombo/breakout-3d" target="_blank">GitHub</a>.</p>
+        <p class="build">
+            built.with = <a href="https://threejs.org" target="_blank">Three.js</a>;
+            <span class="source"><a href="https://github.com/fncombo/breakout-3d" target="_blank">source code</a></span>;
+        </p>
+        <p>A three-level breakout game running in the browser using <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API" target="_blank">WebGL</a>. Built from the ground up using basic models and textures. Complete with points, lives, power-ups, and flavour text.</p>
 
         <hr>
 
         <h2><a href="https://fireflies.fncombo.me">Firefly Haven</a></h2>
-        <p class="build">built.with = <a href="https://threejs.org" target="_blank">Three.js</a>;</p>
+        <p class="build">
+            built.with = <a href="https://threejs.org" target="_blank">Three.js</a>;
+            <span class="source"><a href="https://github.com/fncombo/fnfireflies" target="_blank">source code</a></span>;
+        </p>
         <p>Simple serene 3D scene with randomly generated terrain and particle effects. Fireflies around the tree move individually using the <a href="https://en.wikipedia.org/wiki/L%C3%A9vy_flight" target="_blank">L&eacute;vy flight</a> algorithm. Background stars twinkle and rotate to mimic a night sky.</p>
 
         <hr>
