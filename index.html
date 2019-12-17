@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap">
-    <link rel="shortcut icon" href="favicon.ico">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" />
+    <link rel="shortcut icon" href="favicon.ico" />
     <title>fncombo</title>
-    <meta name="description" content="Hello. I am a developer and a designer. Here you can find some of my projects.">
-    <meta name="og:description" content="Hello. I am a developer and a designer. Here you can find some of my projects.">
-    <meta name="twitter:description" content="Hello. I am a developer and a designer. Here you can find some of my projects.">
+    <meta name="description" content="Hello. I am a developer and a designer. Here you can find some of my projects." />
+    <meta name="og:description" content="Hello. I am a developer and a designer. Here you can find some of my projects." />
+    <meta name="twitter:description" content="Hello. I am a developer and a designer. Here you can find some of my projects." />
     <style>
 * {
     box-sizing: border-box;
@@ -53,7 +53,7 @@ hr {
     }
 }
 
-.fnheader:before {
+.fnheader::before {
     background: linear-gradient(to right, rgb(130, 180, 50), rgb(80, 160, 240));
     content: '';
     display: block;
@@ -80,7 +80,7 @@ hr {
     position: relative;
 }
 
-.fnheader h1 a:after {
+.fnheader h1 a::after {
     content: '';
     background: linear-gradient(to right, rgb(130, 180, 50), rgb(80, 160, 240));
     display: block;
@@ -98,7 +98,7 @@ hr {
     text-decoration: underline;
 }
 
-.fnheader h1 a:hover:after {
+.fnheader h1 a:hover::after {
     opacity: 1;
 }
 
@@ -142,7 +142,7 @@ h2 a:hover {
     border: none;
 }
 
-h2 a:after {
+h2 a::after {
     content: '';
     background: linear-gradient(to right, rgb(130, 180, 50), rgb(80, 160, 240));
     display: block;
@@ -156,7 +156,7 @@ h2 a:after {
     transition: opacity 0.15s ease-in-out;
 }
 
-h2 a:hover:after {
+h2 a:hover::after {
     opacity: 1;
 }
 
@@ -176,13 +176,13 @@ p {
     color: hsl(0, 0%, 50%);
 }
 
-.build:before {
+.build::before {
     content: '{{';
     margin-right: 0.5rem;
     opacity: 0.5;
 }
 
-.build:after {
+.build::after {
     content: '}}';
     margin-left: 0.5rem;
     opacity: 0.5;
@@ -214,13 +214,13 @@ p {
     <div class="content">
 
         <h2><a href="https://tea.fncombo.me">Tea Shelf</a></h2>
-        <p>Colourful card gallery of owned teas and tisanes with <a href="https://en.wikipedia.org/wiki/Approximate_string_matching" target="_blank" rel="noopener noreferrer">fuzzy searching</a> and configurable brewing timers. Can work as an offline web app.</p>
+        <p>Colourful card gallery of owned teas and tisanes with configurable brewing timers.</p>
         <p class="build">Built with React. <a href="https://github.com/fncombo/fntea" target="_blank" rel="noopener noreferrer">Source code</a>.</p>
 
         <hr>
 
         <h2><a href="https://anime.fncombo.me">Anime List</a></h2>
-        <p>Custom data table and gallery which can be searched, filtered, and sorted by multiple columns simultaneously. Additional data powered by <a href="http://jikan.moe" target="_blank" rel="noopener noreferrer">Jikan API</a>.</p>
+        <p>Custom data table and gallery which can be <a href="https://en.wikipedia.org/wiki/Approximate_string_matching" target="_blank" rel="noopener noreferrer">fuzzy searched</a>, filtered, and sorted by multiple columns simultaneously. Additional data powered by <a href="http://jikan.moe" target="_blank" rel="noopener noreferrer">Jikan API</a>.</p>
         <p class="build">Built with React and Bulma. <a href="https://github.com/fncombo/fnanime" target="_blank" rel="noopener noreferrer">Source code</a>.</p>
 
         <hr>
